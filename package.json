@@ -39,7 +39,8 @@
         "react": "17.x",
         "react-dom": "17.x",
         "react-router": "6.x",
-        "react-router-dom": "6.x"
+        "react-router-dom": "6.x",
+        "yarn": "^1.22.19"
     },
     "@comment devDependencies": [],
     "devDependencies": {

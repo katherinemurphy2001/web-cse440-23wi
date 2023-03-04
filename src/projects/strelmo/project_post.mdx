@@ -56,12 +56,14 @@ import ian from "./assets/team/ianspic.jpg";
 import andy from "./assets/team/andy.jpg";
 import mari from "./assets/team/marinew.jpg";
 import imageTeamPerson4 from "./assets/team/firstname4.png";
+import jacob from "./assets/team/jacob.jpg";
 
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+import homescreen from "./assets/post/homescreen.png";
 
-# Strelmo
+# STRELMO
 
 <ProjectSubtitle>The Stress Less Mouse</ProjectSubtitle>
 
@@ -82,7 +84,7 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
     },
     {
         name: "Jacob Knight",
-        photo: imageTeamPerson4,
+        photo: jacob,
     },
 ]} />
 
@@ -101,33 +103,30 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: homescreen,
     }}
     caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
+        "Our computer app's home page from our digital mockup."
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"279px"}
 >
 
-Ian ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+The design problem we sought to solve was that of workplace stress. In the 
+United States, 52% of employees feel burnout, with work being the #1 stressor 
+for a quarter of workers. It seems pretty obvious that more stress leads to 
+workers feeling less engaged at work, which is a big problem. While there is 
+a large market for stress management apps, we feel as though current stress-
+managing solutions are self-directed, don't have insights into stress levels, 
+and aren't data-driven in identifying and reacting to stress levels as they 
+peak.
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+Thus, we designed STRELMO, a mouse and corresponding computer app that workers could use 
+at their desk jobs. The mouse would have a sensor developed by researchers at 
+UCLA in the palm that measures cortisol, the key hormone regulating stress, 
+through sweat. The mouse would then send information to the computer app, where 
+users could track their stress levels through time and maintain a stress 
+management routine.
 
 </ProjectImageBlock>
 

@@ -55,7 +55,7 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
 import imageTeamPerson1 from "./assets/team/elora.png";
 import imageTeamPerson2 from "./assets/team/sangwon.png";
 import imageTeamPerson3 from "./assets/team/ally.png";
-import imageTeamPerson4 from "./assets/team/firstname4.png";
+import imageTeamPerson4 from "./assets/team/manoj.png";
 
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
@@ -194,8 +194,6 @@ We decided to focus on the following two tasks:
 - Teaching healthy alternative behaviors that can replace BFRBs so that we can provide them with a practical way to stop the behaviors.
 - Logging engagements whenever they engage in BFRBs so that we can identify patterns or triggers helpful to finding the root cause of the behaviors.
 
-As part of the iterative design process, we first brainstormed and sketched different ideas such as a CBT-based mobile game application, implanted tracking device, and a motion-detecting smartwatch application. We eventually agreed on a mobile application that tracks a person’s engagements in BFRBs, through manual logging and optional automatic motion detection through a smartwatch, and teaches therapy techniques to help them learn healthy and effective coping mechanisms.
-
 <ProjectImagesBlock
     images={[
         {
@@ -207,11 +205,13 @@ As part of the iterative design process, we first brainstormed and sketched diff
     ]}
     direction={"column"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Sequence diagrams for mobile and smartwatch paper prototypes."
     }
     width={8}
     maxHeight={"400px"}
 >
+
+As part of the iterative design process, we first brainstormed and sketched different ideas such as a CBT-based mobile game application, implanted tracking device, and a motion-detecting smartwatch application. We eventually agreed on a mobile application that tracks a person’s engagements in BFRBs, through manual logging and optional automatic motion detection through a smartwatch, and teaches therapy techniques to help them learn healthy and effective coping mechanisms.
 
 Based on the selected tasks and design, we built an initial paper prototype, which inspection and usability testing revealed many small and big issues. For example, a participant attempted to submit a log but the page was missing the submit button. The participant was also confused by inconsistent back buttons, one represented by “X” at the top right corner while the other represented by a back arrow at the top left corner.
 
@@ -230,7 +230,7 @@ Addressing these issues, we finalized our paper prototype by adding a tutorial p
     ]}
     direction={"column"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Digital mockups for mobile and smartwatch designs."
     }
     width={8}
     maxHeight={"400px"}
@@ -241,8 +241,6 @@ Based on the final paper prototype, we created the following digital mockup:
 </ProjectImagesBlock>
 
 ### Redirecting Inaccessible Smartwatch Functionalities to Mobile Application
-
-The usability testing revealed our assumption that smartwatch devices could share the majority of UI structure and layout with a mobile app design. In particular, the participants communicated their concerns on the pages for logging in and signing up as they require typing on a small screen, which can lead to inaccuracy and frustration. Following the feedback, we simplified our smartwatch layout by prompting participants to sign in or create an account through their mobile device. We further simplified the smartwatch feature by shifting the focus to the mobile application and keeping the smartwatch as an optional extension. To achieve this, we removed the ability for participants to navigate to other tabs (which would otherwise be available on the mobile application), and have limited the participants’ abilities to just tracking, practicing skills, and quickly checking their avatar’s growth on the home screen.
 
 <ProjectImagesBlock
     images={[
@@ -260,6 +258,9 @@ The usability testing revealed our assumption that smartwatch devices could shar
     width={8}
     maxHeight={"400px"}
 >
+
+The usability testing revealed our assumption that smartwatch devices could share the majority of UI structure and layout with a mobile app design. In particular, the participants communicated their concerns on the pages for logging in and signing up as they require typing on a small screen, which can lead to inaccuracy and frustration. Following the feedback, we simplified our smartwatch layout by prompting participants to sign in or create an account through their mobile device. We further simplified the smartwatch feature by shifting the focus to the mobile application and keeping the smartwatch as an optional extension. To achieve this, we removed the ability for participants to navigate to other tabs (which would otherwise be available on the mobile application), and have limited the participants’ abilities to just tracking, practicing skills, and quickly checking their avatar’s growth on the home screen.
+
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
@@ -282,8 +283,6 @@ The usability testing revealed our assumption that smartwatch devices could shar
 
 ### Promoting Accessibility
 
-While creating a digital mockup during section, a TA pointed out that our color scheme may not be accessible due to low contrast. It brought accessibility into our attention and made us realize that we made assumptions that everyone using our app could perceive information and stimuli exactly as we can. We unconsciously applied an ableist perspective to our design and made no adjustments for those who have disability or neurodivergent challenges. We have attempted to resolve this by including an accessibility tab in the settings section of the user profile, with potential options for utilizing a screen reader, adjusting colors and intensity, changing font sizes, and adjusting speed/sounds of app animations.
-
 <ProjectImagesBlock
     images={[
         {
@@ -297,6 +296,9 @@ While creating a digital mockup during section, a TA pointed out that our color 
     width={8}
     maxHeight={"400px"}
 >
+
+While creating a digital mockup during section, a TA pointed out that our color scheme may not be accessible due to low contrast. It brought accessibility into our attention and made us realize that we made assumptions that everyone using our app could perceive information and stimuli exactly as we can. We unconsciously applied an ableist perspective to our design and made no adjustments for those who have disability or neurodivergent challenges. We have attempted to resolve this by including an accessibility tab in the settings section of the user profile, with potential options for utilizing a screen reader, adjusting colors and intensity, changing font sizes, and adjusting speed/sounds of app animations.
+
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
@@ -316,8 +318,6 @@ While creating a digital mockup during section, a TA pointed out that our color 
 
 ### Improving Visibility of Functions Through Labels
 
-During the usability testing, multiple participants reported confusion in functions of the buttons in the page after a skill wheel chooses a skill to engage in. Originally, the buttons were only represented by icons–a check mark to indicate accept, a circular arrow to indicate respin to choose another skill, and an “X” mark to indicate reject. However, we realized that the icons alone may not be clear enough, especially for new users. To address this problem, we labeled each button with their function to make them more visible and intuitive.
-
 <ProjectImagesBlock
     images={[
         {
@@ -331,6 +331,9 @@ During the usability testing, multiple participants reported confusion in functi
     width={8}
     maxHeight={"400px"}
 >
+
+During the usability testing, multiple participants reported confusion in functions of the buttons in the page after a skill wheel chooses a skill to engage in. Originally, the buttons were only represented by icons–a check mark to indicate accept, a circular arrow to indicate respin to choose another skill, and an “X” mark to indicate reject. However, we realized that the icons alone may not be clear enough, especially for new users. To address this problem, we labeled each button with their function to make them more visible and intuitive.
+
 </ProjectImagesBlock>
 
 <ProjectImagesBlock

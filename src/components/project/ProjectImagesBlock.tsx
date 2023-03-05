@@ -62,7 +62,7 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (p
                                                         maxHeight: (props.maxHeight === undefined) ? "400px" : props.maxHeight,
                                                         maxWidth: "100%"
                                                     }}
-                                                    alt={projectImage.alt ? `${projectImage.alt}` : 'Image that showcases the design process of the project.'}
+                                                    alt={projectImage.alt ? `${projectImage.alt}` : 'Missing alt text.'}
                                                 />
                                             </Paper>
                                             {

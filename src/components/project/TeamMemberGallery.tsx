@@ -11,6 +11,7 @@ import {
 interface TeamMemberProps {
     name: string;
     photo: string;
+    alt?: string;
 }
 
 interface TeamMemberGalleryProps {
@@ -37,7 +38,7 @@ export const TeamMemberGallery: FunctionComponent<TeamMemberGalleryProps> = (pro
                                             <img
                                                 src={teamMemberProps.photo}
                                                 width="150"
-                                                alt={"Photo of " + teamMemberProps.name}
+                                                alt={teamMemberProps.alt ? teamMemberProps.alt : `Photo of ${teamMemberProps.name}.`}
                                             />
                                         </Stack>
                                     </CardContent>

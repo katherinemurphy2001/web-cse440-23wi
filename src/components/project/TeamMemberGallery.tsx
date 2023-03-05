@@ -38,7 +38,7 @@ export const TeamMemberGallery: FunctionComponent<TeamMemberGalleryProps> = (pro
                                             <img
                                                 src={teamMemberProps.photo}
                                                 width="150"
-                                                alt={`Photo of ${teamMemberProps.name}.${teamMemberProps.alt ? ` ${teamMemberProps.alt}` : '' }`}
+                                                alt={teamMemberProps.alt ? teamMemberProps.alt : `Photo of ${teamMemberProps.name}.`}
                                             />
                                         </Stack>
                                     </CardContent>

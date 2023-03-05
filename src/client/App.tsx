@@ -36,7 +36,7 @@ import ProjectGymStar from '../projects/gymstar/project_post.mdx';
 import ProjectHuddle from '../projects/huddle/project_post.mdx';
 import ProjectLingual from '../projects/lingual/project_post.mdx';
 import ProjectMediSymp from '../projects/medisymp/project_post.mdx';
-import ProjectNomNom from '../projects/medisymp/project_post.mdx';
+import ProjectNomNom from '../projects/nomnom/project_post.mdx';
 import ProjectOptimizeMe from '../projects/optimizeme/project_post.mdx';
 import ProjectPenPal from '../projects/penpal/project_post.mdx';
 import ProjectPinPal from '../projects/pinpal/project_post.mdx';

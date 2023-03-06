@@ -9,7 +9,7 @@
   *
   * Note this template's use of comment syntax.
   * Curly brackets delineate a code block, within which you can then initiate a comment.
-  * The column of `*` characters has no effect and is included only for readability.
+  * The column of "*" characters has no effect and is included only for readability.
 */}
 
 {/* Tool Documentation
@@ -52,36 +52,62 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
   *   - Be sure all images are the same height.
 */}
 
-import imageTeamPerson1 from "./assets/team/firstname1.png";
-import imageTeamPerson2 from "./assets/team/firstname2.png";
-import imageTeamPerson3 from "./assets/team/firstname3.png";
-import imageTeamPerson4 from "./assets/team/firstname4.png";
+import imageTeamPerson1 from "./assets/team/anna.png";
+import imageTeamPerson2 from "./assets/team/srushti.png";
+import imageTeamPerson3 from "./assets/post/rebbie.jpg";
+import imageTeamPerson4 from "./assets/team/garima.png";
+
+import friendsImage from "./assets/post/findfriendstowalkhome.png";
+import busImage from "./assets/post/bus.png";
 
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+import huddleHomescreen from "./assets/post/huddle_homescreen.png";
 
-# Title
+import insight1 from "./assets/post/insight1.png";
+import insight2 from "./assets/post/insight2.png";
+import insight3 from "./assets/post/insight3.png";
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+import home from "./assets/post/home.png"; 
+import signUp from "./assets/post/sign-up.png";
+import login from "./assets/post/login.png";
+import tutorial from "./assets/post/tutorial.png";
+import tutorialSequence from "./assets/post/tutorial-sequence.png";
+
+import profile from "./assets/post/profile.png";
+import friends from "./assets/post/friends.png";
+
+import huddle from "./assets/post/huddle.png";
+import updateStatus from "./assets/post/update-status.png";
+import updatedStatus from "./assets/post/updated-status.png";
+
+import sendRequest from "./assets/post/send-request.png";
+import receiveRequest from "./assets/post/receive-request.png";
+import acceptedRequest from "./assets/post/accepted-request.png";
+import routes from "./assets/post/route.png";
+
+# Huddle
+
+<ProjectSubtitle>Navigate your commute safely, with friends</ProjectSubtitle>
 
 ## Team
 
 <TeamMemberGallery members={[
     {
-        name: "Team Person 1",
+        name: "Anna Winnick",
         photo: imageTeamPerson1,
     },
     {
-        name: "Team Person 2",
+        name: "Srushti Adesara",
         photo: imageTeamPerson2,
     },
     {
-        name: "Team Person 3",
+        name: "Rebecca Qian",
         photo: imageTeamPerson3,
     },
     {
-        name: "Team Person 4",
+        name: "Garima Thapa",
         photo: imageTeamPerson4,
     },
 ]} />
@@ -101,74 +127,81 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: huddleHomescreen,
     }}
     caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
+        "The huddle page is the primary screen of the app. It houses all urgent information pertaining to your huddles"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+It's late at night. After a long solo walk from campus, you are finally getting 
+home from your group meeting. Approaching your apartment, you realize your 
+neighbor is also getting back from studying and is unlocking the main
+door just ahead of you. As you walk up the stairs together, you find out that 
+they were in the same building working two floors down from your favorite study spot.
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+This situation has happened to most of us in one form or another. Both students 
+and safety professionals have noted that travelling in groups is far preferred 
+over commuting alone. Living in the city, students are put at risk every time a 
+class or project meeting gets out late and no one else from the group is headed 
+in the same direction. What if we extended that circle?  We realized that, as 
+students, there is almost always someone we know nearby. However, it is difficult 
+to connect when even a 30 second difference in departure time can destroy the
+possibility of overlapping paths.
+
+To solve this problem, Huddle connects people who already know each other before 
+leaving for their destination. By collecting data about people's commutes, 
+we can broadcast the data to other people they already trust, thus
+maximizing the opportunity to have a partner for even part of a commute.
+
+Safety goes beyond companionship, however. We realized that we can't change 
+the relative safety of an area, but we are able to alter how students react to it. 
+This is where the second component of our design comes in. Whether walking
+alone or in a huddle, app users also have access to our Safer Route mapping. 
+This feature combines real-time safety updates with general safety trends as 
+reported by other users. It provides an extra level of awareness for anyone 
+trying to get around campus, independent of others' availability.
+
 
 </ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+For our design research process, we wanted to find UW students who were living on 
+or around the U District area to see if they happened to experience any instances 
+whilst commuting in which they felt unsafe. We chose to conduct semi-structured 
+interviews because we had specific questions we wanted to ask, but wanted to have 
+flexibility in the conversation based on the students' responses. We interviewed 
+3 computer science students: a sophomore who takes the lightrail, a junior who 
+usually walks home, and sophomore who busses. We selected these students because 
+they had been commuting around Seattle for at least a year and would be our 
+target audience for improving their commuting experience.
 
-### Title for an Insight
+### Seeing the Same People on the Way Home But Not Approaching Them
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
+When asked if they saw familiar faces in their daily commutes, our participants 
+explained that they would see the same people on the bus or while walking from 
+home to class everyday, but were timid or uncomfortable with the idea of just 
+walking up and approaching them. One participant said that he wished there was 
+a way for him to talk to those people. Another participant mentioned the 
+recognition of those familiar faces being friends of their friends who they 
+knew lived in the same place as them.
 
-### Title for an Insight
+### Want to Stay Connected to Others, But Need to Be Aware of Surroundings
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
+            src: friendsImage,
+            caption: "At night, when someone doesn't want to walk home alone, " +
+                     "they can go on their phone to find a friend.",
         },
         {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
+            src: busImage,
+            caption: "We wanted to make bussing less intimidating with live " +
+                     "alerts and suggested things to do inbetween waiting.",
         },
     ]}
     direction={"row"}
@@ -176,185 +209,286 @@ faucibus nisl tincidunt.
     maxHeight={"400px"}
 >
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+Our participants stated that they wanted to keep talking with their friends  
+while they were commuting, but found it difficult because they also had to 
+be extra aware of what was going on around them. One participant said that 
+she commonly uses FaceTime to call her friends on her commute, while 
+another says that she doesn't because "when my phone is on speaker, I don’t 
+like people hearing my conversations and I don’t want to put earbuds in 
+cause I want to be aware of my surroundings.” Our last participant said, "I 
+usually double check to make sure no one’s following me and stuff,” 
+gesturing that he looks over his shoulder frequently. 
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### Waiting For the Bus Can Be Scary, Unreliable, and Time-Consuming
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+All of our participants mentioned that they had used the bus before to commute 
+to a destination. One of our participants says that “Waiting at the bus stop 
+by myself can be scary.” Another says that while bussing may be safer, she 
+often opts to walk because of how unreliable the buses can be.
+As a result of these findings, we wanted to add a feature to our design that 
+allowed for timely alerts of any events that would affect someone's route and, 
+as a result, update the route to reflect any changes from the alerts.
 
 ## Iterative Design Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+We started off by creating our paper prototype. Since we had two
+tasks we wanted to focus on, we made sure that the functionalities
+of our app were targeted towards helping participants accomplish
+these goals. After this, we conducted heuristic evaluations to
+better understand how different participants would interact with
+our prototype. We asked two evaluators in our CSE 440 class to 
+go through our prototype and they helped us identify usability problems
+in our design. We were able to gather helpful feedback surrounding 
+Nielsen’s Heuristics. Following the heuristic evaluation, 
+we did usability testing. We asked three different students 
+if they would be willing to participate in our test. First we 
+talked to a freshman in the Nanoscience Building who generally 
+walked to all of his classes and did not spend too much time on 
+West campus. Our second participant was a senior in our CSE 440 
+section who usually walked to campus. Lastly, we talked to a sophomore 
+at the Odegaard Library who usually took the bus and walked if 
+she was running late. We were able to get very helpful feedback that 
+allowed us to refine our prototype in several ways. We proceeded to 
+complete our digital mockup by using what we learned from all our past 
+evaluations and reflections as a team using the Figma platform.
 
-### Title for an Insight
+### Providing an Initial Tutorial 
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: insight1
     }}
     caption={
-        "This is a caption."
+        "Initial design without tutorial on the left and refined design with home screen tutorial on the right."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+Initially our main home page had three main functionality buttons 
+but while conducting our usability test with the senior in our 
+CSE 440 section, she mentioned how she was not sure what the buttons 
+were supposed to do. Since we had to serve as “human computers” we 
+were not able to guide her. However, this shed light upon the fact 
+that we should make sure to include a clear tutorial that participants 
+are able to see upon entry onto the main page instead of seeing just 
+the buttons. We added a detailed description bubble for what each button 
+did so that participants could clearly choose one, depending on the 
+task they wanted to accomplish.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Adding Proximity Clarity on Finding a Huddle
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: insight2,
     }}
     caption={
-        "This is a caption."
+        "Initial design without adjustable radius on the left and adjustable radius for finding friends to commute with on the right."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+During our usability test with the sophomore from the Odegaard 
+library, she asked us how close her friends were to her when 
+choosing who to add to her huddle. We could not clarify this 
+during the process since we were practicing an “off-hands” 
+practice but it got us thinking about how we should solve this 
+challenge. She brought up a valid point because with our 
+prototype at the time, there was no way of knowing how close 
+or far your friends were from you. We decided to add an 
+adjustable radius for people to find other contacts that were 
+close to them to commute with. This added more clarity to the 
+process of picking individuals to commute with.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Allowing Modification of Huddle Requests
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: insight3,
     }}
     caption={
-        "This is a caption."
+        "​​Initial request design on the top. Iterated screens with more flexibility when sending requests at the bottom."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+While going through our prototype as a group, we observed 
+that there was no way to modify the request that individuals 
+would send others to create a huddle. At first, our model 
+was very rigid and individuals who received the request 
+could only accept or decline. This seemed very inflexible 
+so we modified our request page by making it more open-ended 
+to accommodate more situations. We made it a text box where 
+we prompted them with some questions that they could use to 
+send their request. We also added more cancel button and 
+back button scenarios to give the participant more 
+flexibility when creating a request.  
 
 </ProjectImageBlock>
 
 ## Resulting Design
 
+### Startup Sequence
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: home,
         },
         {
-            src: imagePlaceholder300x600,
+            src: signUp,
         },
         {
-            src: imagePlaceholder300x600,
+            src: login,
         },
         {
-            src: imagePlaceholder300x600,
+            src: tutorial,
         },
     ]}
     direction={"row"}
-    caption={
-        "This caption for the entire block will span the set of images."
-    }
     width={8}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+To get started, students can create an account and use UW single sign-on to verify 
+that they are a UW student. There is also an option to toggle accessible routing 
+if a user needs it. 
 
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
+            src: tutorialSequence,
         },
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Tutorial sequence"
     }
     width={8}
     maxHeight={"400px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+Once signed up, the app executes a tutorial of the home screen. The home (huddle) 
+screen displays where the user can input their next commute, a section showing the 
+current huddle, any huddle requests they have received, and a section for messages.
+
+</ProjectImagesBlock>
+
+### Adding Friends
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: profile,
+        },
+        {
+            src: friends,
+        },
+    ]}
+    direction={"column"}
+    width={8}
+    maxHeight={"400px"}
+>
+
+In the profile screen, a user can change their settings such as who they allow 
+friend requests from. "Contacts only" allows people that are already in the 
+user's saved phone contacts to be added as friends on the app, while "contacts 
+and friends of existing friends" allows a user to also add people their friends 
+have in their friends list. Consequently, in the Friends screen, the user can 
+view their friends, people they can add from their contacts (and people their 
+friends have added if they chose this setting), and any incoming friend requests. 
+
+</ProjectImagesBlock>
+
+### Build a Huddle to Commute With Friends
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: huddle,
+        },
+        {
+            src: updateStatus,
+        },
+        {
+            src: updatedStatus,
+        },
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"400px"}
+>
+
+A user can input their commute status, which will allow their status to be seen 
+by friends. Commute status includes where they're starting their route, where 
+they're headed, and around what time they'd like to make the commute.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: sendRequest,
+        },
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"400px"}
+>
+
+A request for a huddle can be sent through "Find a Huddle". A user can select 
+a friend they'd like to commute with and send them a request based on time and 
+location to meet up. 
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: receiveRequest,
+        },
+        {
+            src: acceptedRequest,
+        },
+    ]}
+    direction={"column"}
+    width={8}
+    maxHeight={"400px"}
+>
+
+After a request is sent, the friend will get a notification that will appear 
+in the huddle requests section. Once accepted, the huddle will show up in the 
+"active huddles" section for both parties. Messages will also display further 
+communication leaving it open for any changes.
+
+</ProjectImagesBlock>
+
+#### Finding a Safe Route
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: routes,
+        },
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"400px"}
+>
+
+A user can start looking for a commute route after inputting their start and 
+end locations. Our app will display route options and recommend a route based 
+on safety from post-route safety data from users and route information. At the 
+end of the commute, users can submit ratings for the route.
 
 </ProjectImagesBlock>

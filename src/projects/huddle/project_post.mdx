@@ -288,73 +288,169 @@ adipiscing diam donec adipiscing.
 
 ## Resulting Design
 
+### Startup Sequence
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: "/assets/posts/home.png",
         },
         {
-            src: imagePlaceholder300x600,
+            src: "/assets/posts/sign-up.png",
         },
         {
-            src: imagePlaceholder300x600,
+            src: "/assets/posts/login.png",
         },
         {
-            src: imagePlaceholder300x600,
+            src: "/assets/posts/tutorial.png",
         },
     ]}
     direction={"row"}
-    caption={
-        "This caption for the entire block will span the set of images."
-    }
     width={8}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+To get started, students can create an account and use UW single sign-on to verify 
+that they are a UW student. There is also an option to toggle accessible routing 
+if a user needs it. 
 
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
+            src: "/assets/posts/tutorial-sequence.png",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Tutorial sequence"
     }
     width={8}
     maxHeight={"400px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+Once signed up, the app executes a tutorial of the home screen. The home (huddle) 
+screen displays where the user can input their next commute, a section showing the 
+current huddle, any huddle requests they have received, and a section for messages.
+
+</ProjectImagesBlock>
+
+### Adding Friends
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: "/assets/posts/profile.png",
+        },
+        {
+            src: "/assets/posts/friends.png",
+        },
+    ]}
+    direction={"column"}
+    caption={
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+In the profile screen, a user can change their settings such as who they allow 
+friend requests from. "Contacts only" allows people that are already in the 
+user's saved phone contacts to be added as friends on the app, while "contacts 
+and friends of existing friends" allows a user to also add people their friends 
+have in their friends list. Consequently, in the Friends screen, the user can 
+view their friends, people they can add from their contacts (and people their 
+friends have added if they chose this setting), and any incoming friend requests. 
+
+</ProjectImagesBlock>
+
+### Build a Huddle to Commute With Friends
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: "/assets/posts/huddle.png",
+        },
+        {
+            src: "/assets/posts/update-status.png",
+        },
+        {
+            src: "/assets/posts/updated-status.png",
+        },
+    ]}
+    direction={"row"}
+    caption={
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+A user can input their commute status, which will allow their status to be seen 
+by friends. Commute status includes where they're starting their route, where 
+they're headed, and around what time they'd like to make the commute.
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: "/assets/posts/send-request.png",
+        },
+    ]}
+    direction={"row"}
+    caption={
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+A request for a huddle can be sent through "Find a Huddle". A user can select 
+a friend they'd like to commute with and send them a request based on time and 
+location to meet up. 
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: "/assets/posts/receive-request.png",
+        },
+        {
+            src: "/assets/posts/accepted-request.png",
+        },
+    ]}
+    direction={"column"}
+    caption={
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+After a request is sent, the friend will get a notification that will appear 
+in the huddle requests section. Once accepted, the huddle will show up in the 
+"active huddles" section for both parties. Messages will also display further 
+communication leaving it open for any changes.
+
+</ProjectImagesBlock>
+
+#### Finding a Safe Route
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: "/assets/posts/route.png",
+        },
+    ]}
+    direction={"row"}
+    caption={
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+A user can start looking for a commute route after inputting their start and 
+end locations. Our app will display route options and recommend a route based 
+on safety from post-route safety data from users and route information. At the 
+end of the commute, users can submit ratings for the route.
 
 </ProjectImagesBlock>

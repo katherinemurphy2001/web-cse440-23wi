@@ -52,7 +52,7 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
   *   - Be sure all images are the same height.
 */}
 
-import imageTeamPerson1 from "./assets/team/anna.jpeg";
+import imageTeamPerson1 from "./assets/team/anna.png";
 import imageTeamPerson2 from "./assets/team/firstname2.png";
 import imageTeamPerson3 from "./assets/post/rebbie.jpg";
 import imageTeamPerson4 from "./assets/team/firstname4.png";
@@ -63,11 +63,18 @@ import busImage from "./assets/post/bus.png";
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+import huddleHomescreen from "./assets/post/huddle_homescreen.png";
+
+import insight1 from "./assets/post/insight1.png";
+import insight2 from "./assets/post/insight2.png";
+import insight3 from "./assets/post/insight3.png";
 
 
-# Title
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+
+# Huddle
+
+<ProjectSubtitle>Navigate your commute safely, with friends</ProjectSubtitle>
 
 ## Team
 
@@ -105,12 +112,10 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: huddleHomescreen,
     }}
     caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
+        "The huddle page is the primary screen of the app. It houses all urgent information pertaining to your huddles"
     }
     width={6}
     maxHeight={"400px"}
@@ -211,20 +216,32 @@ as a result, update the route to reflect any changes from the alerts.
 
 ## Iterative Design Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+We started off by creating our paper prototype. Since we had two
+tasks we wanted to focus on, we made sure that the functionalities
+of our app were targeted towards helping participants accomplish
+these goals. After this, we conducted heuristic evaluations to
+better understand how different participants would interact with
+our prototype. We asked two evaluators in our CSE 440 class to 
+go through our prototype and they helped us identify usability problems
+in our design. We were able to gather helpful feedback surrounding 
+Nielsen’s Heuristics. Following the heuristic evaluation, 
+we did usability testing. We asked three different students 
+if they would be willing to participate in our test. First we 
+talked to a freshman in the Nanoscience Building who generally 
+walked to all of his classes and did not spend too much time on 
+West campus. Our second participant was a senior in our CSE 440 
+section who usually walked to campus. Lastly, we talked to a sophomore 
+at the Odegaard Library who usually took the bus and walked if 
+she was running late. We were able to get very helpful feedback that 
+allowed us to refine our prototype in several ways. We proceeded to 
+complete our digital mockup by using what we learned from all our past 
+evaluations and reflections as a team using the Figma platform.
 
-### Title for an Insight
+### Providing an Initial Tutorial 
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: insight1
     }}
     caption={
         "This is a caption."
@@ -233,27 +250,24 @@ in nisl nisi. Risus at ultrices mi tempus imperdiet.
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+Initially our main home page had three main functionality buttons 
+but while conducting our usability test with the senior in our 
+CSE 440 section, she mentioned how she was not sure what the buttons 
+were supposed to do. Since we had to serve as “human computers” we 
+were not able to guide her. However, this shed light upon the fact 
+that we should make sure to include a clear tutorial that participants 
+are able to see upon entry onto the main page instead of seeing just 
+the buttons. We added a detailed description bubble for what each button 
+did so that participants could clearly choose one, depending on the 
+task they wanted to accomplish.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Adding Proximity Clarity on Finding a Huddle
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: insight2,
     }}
     caption={
         "This is a caption."
@@ -262,24 +276,25 @@ vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+During our usability test with the sophomore from the Odegaard 
+library, she asked us how close her friends were to her when 
+choosing who to add to her huddle. We could not clarify this 
+during the process since we were practicing an “off-hands” 
+practice but it got us thinking about how we should solve this 
+challenge. She brought up a valid point because with our 
+prototype at the time, there was no way of knowing how close 
+or far your friends were from you. We decided to add an 
+adjustable radius for people to find other contacts that were 
+close to them to commute with. This added more clarity to the 
+process of picking individuals to commute with.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Allowing Modification of Huddle Requests
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: insight3,
     }}
     caption={
         "This is a caption."
@@ -288,13 +303,17 @@ scelerisque eu ultrices vitae auctor.
     maxHeight={"400px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+While going through our prototype as a group, we observed 
+that there was no way to modify the request that individuals 
+would send others to create a huddle. At first, our model 
+was very rigid and individuals who received the request 
+could only accept or decline. This seemed very inflexible 
+so we modified our request page by making it more open-ended 
+to accommodate more situations. We made it a text box where 
+we prompted them with some questions that they could use to 
+send their request. We also added more cancel button and 
+back button scenarios to give the participant more 
+flexibility when creating a request.  
 
 </ProjectImageBlock>
 

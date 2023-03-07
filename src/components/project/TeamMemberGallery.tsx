@@ -8,17 +8,17 @@ import {
     Stack,
 } from '@mui/material';
 
-interface Props {
+interface TeamMemberProps {
     name: string;
     photo: string;
     alt?: string;
 }
 
-interface GalleryProps {
-    members: Props[];
+interface TeamMemberGalleryProps {
+    members: TeamMemberProps[];
 }
 
-export const Gallery: FunctionComponent<GalleryProps> = (props) => {
+export const TeamMemberGallery: FunctionComponent<TeamMemberGalleryProps> = (props) => {
     return (
         <React.Fragment>
             <Grid container spacing={1}>
@@ -26,19 +26,19 @@ export const Gallery: FunctionComponent<GalleryProps> = (props) => {
                     props.members
                         .sort((a, b) => a.name.localeCompare(b.name))
                         .map(
-                        Props => (
+                        teamMemberProps => (
                             <Grid
                                 item
-                                key={Props.name}
+                                key={teamMemberProps.name}
                             >
                                 <Card>
                                     <CardContent>
                                         <Stack>
-                                            {Props.name}
+                                            {teamMemberProps.name}
                                             <img
-                                                src={Props.photo}
+                                                src={teamMemberProps.photo}
                                                 width="150"
-                                                alt={Props.alt ? Props.alt : `Photo of ${Props.name}.`}
+                                                alt={teamMemberProps.alt ? teamMemberProps.alt : `Photo of ${teamMemberProps.name}.`}
                                             />
                                         </Stack>
                                     </CardContent>
@@ -52,4 +52,4 @@ export const Gallery: FunctionComponent<GalleryProps> = (props) => {
     );
 }
 
-export default Gallery;
+export default TeamMemberGallery;

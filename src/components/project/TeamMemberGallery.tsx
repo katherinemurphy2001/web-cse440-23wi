@@ -8,17 +8,17 @@ import {
     Stack,
 } from '@mui/material';
 
-interface TeamMemberProps {
+interface Props {
     name: string;
     photo: string;
     alt?: string;
 }
 
-interface TeamMemberGalleryProps {
-    members: TeamMemberProps[];
+interface GalleryProps {
+    members: Props[];
 }
 
-export const TeamMemberGallery: FunctionComponent<TeamMemberGalleryProps> = (props) => {
+export const Gallery: FunctionComponent<GalleryProps> = (props) => {
     return (
         <React.Fragment>
             <Grid container spacing={1}>
@@ -26,19 +26,19 @@ export const TeamMemberGallery: FunctionComponent<TeamMemberGalleryProps> = (pro
                     props.members
                         .sort((a, b) => a.name.localeCompare(b.name))
                         .map(
-                        teamMemberProps => (
+                        Props => (
                             <Grid
                                 item
-                                key={teamMemberProps.name}
+                                key={Props.name}
                             >
                                 <Card>
                                     <CardContent>
                                         <Stack>
-                                            {teamMemberProps.name}
+                                            {Props.name}
                                             <img
-                                                src={teamMemberProps.photo}
+                                                src={Props.photo}
                                                 width="150"
-                                                alt={teamMemberProps.alt ? teamMemberProps.alt : `Photo of ${teamMemberProps.name}.`}
+                                                alt={Props.alt ? Props.alt : `Photo of ${Props.name}.`}
                                             />
                                         </Stack>
                                     </CardContent>
@@ -52,4 +52,4 @@ export const TeamMemberGallery: FunctionComponent<TeamMemberGalleryProps> = (pro
     );
 }
 
-export default TeamMemberGallery;
+export default Gallery;

@@ -59,10 +59,13 @@ import imageAaron from "./assets/team/aaron.jpg";
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+import imageLogo from "./assets/post/skia.png";
+import imageIcon from "./assets/post/icon.png";
+import imageFunctionality from "./assets/post/functionality.png";
 
-# Title
+# Skiá
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+<ProjectSubtitle>An Automated Boxer Training Solution</ProjectSubtitle>
 
 ## Team
 
@@ -94,35 +97,53 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageLogo,
+            caption: "The Skiá project logo",
+        },
+        {
+            src: imageIcon,
+            caption: "The Skiá project icon",
+        },
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"400px"}
+>
+
+There are many quantitative self-tracking technologies available that can help
+boxers measure various statistics such as speed, power, and endurance, but
+proper form and technique is often overlooked despite being an essential aspect
+of boxing practice. Additionally, boxing is a highly social activity, with many
+boxers relying on their communities as a source of morale support and instruction.
+Most automated training technologies on the market today are isolated training
+tools and might even detract from the benefits of the sport as a social activity.
+We asked ourselves, how can we automate form tracking for boxers while giving them
+new avenues to connect and interact with their fellow boxers?
+
+</ProjectImagesBlock>
+
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: imageFunctionality,
     }}
     caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
+        "Functionality"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
-
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+Through integration with a multi-camera and/or stereodepth camera setup, a mobile
+application could potentially track the movement and relative positions of each of
+a boxer’s joints during training sessions, opening up the opportunity for
+automated analysis and feedback on the observed form and technique of the boxer.
+We propose a solution that combines this novel sensory system and mobile device
+application to provide real-time form feedback to boxers, track their statistics,
+and establish a platform where they can engage with an online community through
+their practice.
 
 </ProjectImageBlock>
 

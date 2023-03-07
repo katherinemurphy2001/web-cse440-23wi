@@ -52,37 +52,56 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
   *   - Be sure all images are the same height.
 */}
 
-import imageTeamPerson1 from "./assets/team/firstname1.png";
-import imageTeamPerson2 from "./assets/team/firstname2.png";
-import imageTeamPerson3 from "./assets/team/firstname3.png";
+import ian from "./assets/team/ianspic.jpg";
+import andy from "./assets/team/andy.jpg";
+import mari from "./assets/team/marinew.jpg";
 import imageTeamPerson4 from "./assets/team/firstname4.png";
+import jacob from "./assets/team/jacob.jpg";
+import stresspattern from "./assets/post/StressPattern.png";
 
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+import homescreen from "./assets/post/homescreen.png";
+import reminders from "./assets/post/Notifications-2.png";
+import day from "./assets/post/Stats - day.png";
+import week from "./assets/post/Stats - week.png";
+import month from "./assets/post/Stats - month.png";
+import year from "./assets/post/Stats - year.png";
+import trends from "./assets/post/trends.png";
+import hover from "./assets/post/hover.png";
+import Act1 from "./assets/post/Activities-1.png";
+import Act2 from "./assets/post/Activities-2.png";
+import Act from "./assets/post/Activities.png";
+import Noti3 from "./assets/post/Notifications-3.png";
+import Noti4 from "./assets/post/Notifications-4.png";
+import Noti from "./assets/post/Notifications.png";
+import mouse from "./assets/post/mouse.png";
+import resourceful from "./assets/post/resourceful.png";
+import clarity from "./assets/post/statsclarity.png";
 
-# Title
+# STRELMO
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+<ProjectSubtitle>The Stress Less Mouse</ProjectSubtitle>
 
 ## Team
 
 <TeamMemberGallery members={[
     {
-        name: "Team Person 1",
-        photo: imageTeamPerson1,
+        name: "Andy Shaw",
+        photo: andy,
     },
     {
-        name: "Team Person 2",
-        photo: imageTeamPerson2,
+        name: "Mari Woodworth",
+        photo: mari,
     },
     {
-        name: "Team Person 3",
-        photo: imageTeamPerson3,
+        name: "Ian Mahoney",
+        photo: ian,
     },
     {
-        name: "Team Person 4",
-        photo: imageTeamPerson4,
+        name: "Jacob Knight",
+        photo: jacob,
     },
 ]} />
 
@@ -101,188 +120,199 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: homescreen,
     }}
     caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
+        "Our computer app's home page from our digital mockup."
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"279px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+The design problem we sought to solve was that of workplace stress. In the 
+United States, 52% of employees feel burnout, with work being the #1 stressor 
+for a quarter of workers. It seems pretty obvious that more stress leads to 
+workers feeling less engaged at work, which is a big problem. While there is 
+a large market for stress management apps, we feel as though current stress-managing 
+solutions are self-directed, don't have insights into stress levels, 
+and aren't data-driven in identifying and reacting to stress levels as they 
+peak.
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+Thus, we designed STRELMO, a mouse and corresponding computer app that workers could use 
+at their desk jobs. The mouse would have a sensor developed by researchers at 
+UCLA in the palm that measures cortisol, the key hormone regulating stress, 
+through sweat. The mouse would then send information to the computer app, where 
+users could track their stress levels through time and maintain a stress 
+management routine.
 
 </ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+We changed our focus of our problem a bit late in the process, so for our design 
+research, we did not focus on US workers, and instead focused on UW students to 
+understand stressors, current solutions, and their effectiveness. A few of us in 
+our group use apps like Headspace, but we wanted more information from more 
+participants to see what others thought. To accomplish these goals, we did four 
+30 minute semi-structured interviews where we had a set of questions to ask, but 
+we allowed for opportunities to ask follow-up questions and let the conversation to 
+flow. By doing this, we believe it made the participants more comfortable, as stress 
+and mental health can be a tough thing to talk about. Our participants all were UW 
+students who were taking a rigorous course schedule and had extra-curricular 
+obligations. Our participants all dealt with stress and had differing approaches 
+to managing their stress.
 
-### Title for an Insight
+### Stressors are Diverse, Solutions Must be as Well
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
+This insight emerged not in one place, but over the course of our design research. 
+None of the people we talked to had the same stressors nor did they have the same 
+ways of dealing with their stress. A concrete example of this was that a few of our 
+participants used mindfulness apps and felt that they were useful, while one 
+participant did not believe that technology such as apps or a smartwatch was helpful 
+and preferred the professional therapy that they go to. There were several examples 
+like this that led us to the insight that since stressors are diverse, the solutions 
+must be as well. 
 
-### Title for an Insight
+### Understanding Patterns of Stress is Important
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: stresspattern,
+    }}
+    caption={
+        "Someone using our design to uncover patterns in their stress after seeing it go jump and then doing something about it."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Again, this insight emerged throughout our design research. All of our participants 
+noted that to better understand their stress, they wanted to know trends and 
+patterns. They figured that knowing these would better help them to manage 
+their stress. One participant was explicit in talking about this, as they discussed 
+how they note exactly what they were doing at a time of high stress so they can 
+hopefully avoid it in the future. They even tracked it down to times of the day on their 
+calendar and looking at what calendar events were causing them stress. This allowed them 
+to better understand their patterns of stress and help them manage it.
+
+</ProjectImageBlock>
+
+### Desire for a Routine
+
+<ProjectImageBlock
+    image={{
+        src: reminders,
+    }}
+    caption={
+        "Our reminders tab in our design."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+This insight emerged early in our first semi-structured interview. Our participant 
+said that right when they get home from work, they have a routine where they use 
+the calm app to unwind and destress after a long day's work. This insight was 
+solidified further in the subsequent interviews. Another interviewee enjoyed 
+listening to meditation podcasts before going to sleep. This was very interesting 
+and revealing to us, and it guided us to create a reminders tab in our design.
+
+</ProjectImageBlock>
+
+## Iterative Design Process and Key Insights
+
+Our design focus and iterative process were centered around our tasks:
+ 
+    - Tracking Stress Levels Over Time 
+
+    - Maintaining Stress Management Routine. 
+
+To get a sense of what our app would look like in a quick and easy way, we 
+created paper prototypes of our app and its various interactions, using iterative 
+methods such as heuristic evaluations and usability testing to gather and implement 
+feedback. Through these processes, we wanted to ensure that the tasks were intuitive 
+and clearly communicated in our designs. As the designs were on paper, it was easy 
+to share them with classmates and change aspects of it from feedback. The heuristic 
+evaluation inspection method allowed us to gather quick usability-based problems 
+within our designs and we conducted them with those within and outside of our class 
+for a diversity of perspectives. The usability testing allowed us to see how others 
+would interpret and interact with different parts of our app and was great for 
+catching discrepancies and hearing others’ expectations for our design.
+
+After gathering feedback and iterating on our designs, we created the digital 
+mockup of our app, taking into account the different visual, interactional, 
+and functional changes that we have made in our app, STRELMO. 
+
+### Making Mouse Notifications More Accessible
+
+<ProjectImageBlock
+    image={{
+        src: mouse,
+    }}
+    caption={
+        "Prototype of our mouse."
+    }
     width={8}
     maxHeight={"400px"}
 >
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
-
-</ProjectImagesBlock>
-
-### Title for an Insight
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
-
-## Iterative Design Process and Key Insights
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
-
-### Title for an Insight
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+During our last usability test, one participant in a usability test mentioned 
+that they did not notice the lights on the mouse. This led to a conversation 
+with the user about adding other forms of notifications, which is when we 
+realized that the design was not inclusive. So, we chose to add other forms 
+of notifications like vibration from the mouse and added the ability to change 
+the app and mouse light colors to low visibility-friendly palettes.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Improving Clarity of the Stats Tab
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: clarity,
     }}
     caption={
-        "This is a caption."
+        "Initial paper prototype of our stats page."
     }
-    width={6}
+    width={8}
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+A few participants in our usability tests mentioned that the initial Stats tab 
+was missing a lot of key elements, leading to a lack of clarity when trying to 
+display stress levels. A few changes we made were:
+
+    - Added informational tooltips to indicate meanings and usage of certain aspects of the stats panel to mitigate confusion
+    - Provided summarizing trends for each breakdown (day, week, month, year) to make the graph and insights easier to understand for users
+    - Included the ability to hover over the graph for details on specific datapoints (peak, avg, low)
+    - Added a y-axis unit of measure (cortisol levels)
+    - Added legends to the graphs, making it more clear that the bars (for week, month, year views) represented the range of stress levels
+    - Incorporated circles to the bar graphs to indicate the average stress levels for the day
+
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Splitting Unclear Resources Tab into Two Pages
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: resourceful,
     }}
     caption={
-        "This is a caption."
+        "Initial paper prototype of our confusing Resource page."
     }
-    width={6}
+    width={8}
     maxHeight={"400px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+Participants in our usability tests were confused about the intent of our Resources 
+page that we had in our initial design. In it, we tried to incorporate reminders to 
+do activities, the activities themselves, and articles on managing stress. This felt 
+too broad and users did not know how to approach the page initially. We decided to 
+split the Resources page into two separate pages: Reminders and Activities. This 
+updated design made it clear where users were to go in order to maintain a stress 
+management routine. The Reminders page was where users were to go to create notifications 
+and the Activities page is where they were to go upon receiving the notifications.
 
 </ProjectImageBlock>
 
@@ -291,70 +321,123 @@ adipiscing diam donec adipiscing.
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: homescreen,
         },
         {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
+            src: day,
         },
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Users can navigate to the Stats page to track their stress levels over time."
     }
-    width={8}
+    width={12}
     maxHeight={"400px"}
 >
-
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
-
+When a user first opens up STRELMO, they will be on the home page. They will 
+see their current stress level, with information telling them what range their 
+stress level is in. After this, a user can navigate to many tabs of the app, 
+but to accomplish task 1, which is tracking stress levels through time, a user 
+will click on the Stats page.
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: day,
         },
         {
-            src: imagePlaceholder300x600,
+            src: week,
         },
     ]}
     direction={"row"}
-    caption={
-        "This caption for the entire block will span the set of images."
-    }
     width={8}
     maxHeight={"400px"}
 >
+In the stats page, users have the option to look at graphs of their cortisol levels from the mouse through different sets of time. 
+They have day, week, month, and year to pick between for different insights.
+</ProjectImagesBlock>
+<ProjectImagesBlock
+    images={[
+        {
+            src: month,
+        },
+        {
+            src: year,
+        },
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"400px"}
+></ProjectImagesBlock>
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+<ProjectImagesBlock
+    images={[
+        {
+            src: trends,
+        },
+        {
+            src: hover,
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+Autogenerated trends can assist the user in gaining insights into their stress levels to help them find unhelpful patterns that lead to high stress. They can also hover over the graphs for detailed information in word form rather than looking at the graph. Using all this, a user can accomplish the task of tracking stress levels through time.
+</ProjectImagesBlock>
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: homescreen,
+        },
+        {
+            src: Noti,
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+Back at the home page now, when a user attempts to accomplish task 2 of maintaining their stress management routine through the app, they could click to Reminders page.
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: Noti4,
+        },
+        {
+            src: Noti3,
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+On the Reminders page, users can add activities to do and set notifications to remind them to complete them. 
+They can customize how often they get the notifications and where they receive them. This can really help a 
+user to maintain a stress management routine.
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: Act,
+        },
+        {
+            src: Act2,
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+>
+But maybe a user is feeling stressed and wants to just complete an activity and not wait for a notification to 
+tell them to complete one. They can navigate to the Activities page on the left. Here, they can see a number of 
+activities that they can do, some guided through the app, with some being ones a user would do on their own and 
+then log into the app. Then at the bottom, a user could see a graph of when they have been doing activities. When 
+a user chooses a guided activity such as breathing, it will take them to the page below on the right, taking the 
+user through breathing and counting down for their time.
 </ProjectImagesBlock>

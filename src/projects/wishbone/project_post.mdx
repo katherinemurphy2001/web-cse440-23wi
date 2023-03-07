@@ -52,37 +52,58 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
   *   - Be sure all images are the same height.
 */}
 
-import imageTeamPerson1 from "./assets/team/firstname1.png";
-import imageTeamPerson2 from "./assets/team/firstname2.png";
-import imageTeamPerson3 from "./assets/team/firstname3.png";
-import imageTeamPerson4 from "./assets/team/firstname4.png";
+import josh_portrait from "./assets/team/josh_portrait.png";
+import maddi_portrait from "./assets/team/maddi_portrait.png";
+import nathan_portrait from "./assets/team/nathan_portrait.png";
+import david_portrait from "./assets/team/david_portrait.png";
 
-import imagePlaceholder300x600 from "./assets/post/300x600.png";
-import imagePlaceholder400x400 from "./assets/post/400x400.png";
-import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+import overviewImage from "./assets/post/overview2.png";
+import commAwareness from "./assets/post/communication_selfawareness.png";
+import processing from "./assets/post/processing.png";
 
-# Title
+import afterAssumption from "./assets/post/after_assumption.png";
+import afterConsistency from "./assets/post/after_consistency.png";
+import afterFunctionality from "./assets/post/after_functionality.png";
+import beforeAssumption from "./assets/post/before_assumption.png";
+import beforeConsistency from "./assets/post/before_consistency.png";
+import beforeFunctionality from "./assets/post/before_functionality.png";
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+import homeScreen from "./assets/post/home_screen.png";
+import inviteScreen from "./assets/post/invite.png";
+import prHeaderScreen from "./assets/post/personal_reflection_header.png";
+import prScreen from "./assets/post/personal_reflection_header.png";
+import otherPrScreen from "./assets/post/other_person's_reflection.png";
+import callingScreen from "./assets/post/suggestion.png";
+import coeditScreen from "./assets/post/coediting.png";
+import writeActionPointScreen from "./assets/post/action_points_done.png";
+import boneLogScreen from "./assets/post/history_log.png";
+import prevActionPointScreen from "./assets/post/prev_action_points.png";
+import prevWishbone from "./assets/post/prev_wishbone.png";
+
+# Wishbone
+
+<ProjectSubtitle>
+    I've got a bone to pick with you
+</ProjectSubtitle>
 
 ## Team
 
 <TeamMemberGallery members={[
     {
-        name: "Team Person 1",
-        photo: imageTeamPerson1,
+        name: "Joshua Kwok",
+        photo: josh_portrait,
     },
     {
-        name: "Team Person 2",
-        photo: imageTeamPerson2,
+        name: "Madelyn Chan",
+        photo: maddi_portrait,
     },
     {
-        name: "Team Person 3",
-        photo: imageTeamPerson3,
+        name: "Nathan Tu",
+        photo: nathan_portrait,
     },
     {
-        name: "Team Person 4",
-        photo: imageTeamPerson4,
+        name: "David Gim",
+        photo: david_portrait,
     },
 ]} />
 
@@ -101,260 +122,286 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: overviewImage,
     }}
     caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
+        "Logo (left) and Wishbone's guided personal reflection feature (right)."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+Conflict is an inevitable element of interpersonal relationships, and unhealthy handling often 
+produces harmful and unwanted behaviors. Many conflicts are brushed aside, and resolved only at a 
+surface level, leading to recurring and worsening conflicts. Conflict is often something that requires time 
+and sustained effort to settle, and without proper management and self-awareness meaningful 
+resolution is hard to achieve.  
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+
+Maintaining a healthy relationship in spite of these conflicts requires both parties being mindful 
+of their own feelings as well as their counterpart’s feelings. Wishbone conducts meaningful resolution by 
+providing a mobile application interface that facilitates a blend of personal and cooperative reflection 
+through guided writing prompts, ultimately leading both parties to identify and agree upon action points 
+that effectively address the needs of the other. A recorded history log allows individuals to remember 
+and reflect upon their previous conflicts and action points, encouraging continued steps towards true 
+resolution.
 
 </ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+Understanding is the first key step in building a viable and focused design solution for any problem. To 
+that effect, we had these goals in mind while conducting the relevant research: understanding the 
+contexts in which conflicts arise and understanding the ways different people tackle conflict. From those 
+goals, we also had some subgoals of identifying common patterns between our participants and gauging 
+reception towards technology-assisted solutions.
 
-### Title for an Insight
+We sought participants who could provide insight and allow us to achieve the above goals. So, we 
+conducted interviews with four participants across different age groups, profession, and relationship 
+statuses: a couples counselor, a Doctorate student, and two undergraduate students. We chose 
+interviews in order to collect qualitative data in a space where the interviewee can feel empowered to 
+share as much or as little as they like and can talk about their conflict experiences in a setting temporally 
+and spatially removed.
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
+### 1. Communication and Acknowledgement of Feelings is Vital
 
-### Title for an Insight
+Communication surfaced as a common theme among our three non-professional participants; 
+they all discussed that some form of communication is vital to how they approach and deal with 
+conflict. Our Doctorate-pursuing participant remarked that they would communicate to their 
+partner when they are in a heated situation, “I really need some space. Can you give me some 
+space for a bit?” Another one of our participants said that regardless of how much the truth of 
+the conflict hurts, they would always go for a face-to-face meeting to talk things out. Our last 
+non-professional participant talked about how any communication is better than no 
+communication. Following from this, communication became a key aspect of our solution, which 
+our initial storyboard demonstrates.
+
+### 2. Self Awareness is the First Step to Healthy Conflict Management
+
+Our professional interviewee, Mark (a pseudonym), remarked how root emotions that are the source of 
+the conflict  are often not shared, understood, or acknowledged by either party; we could clearly see 
+how in the conflict experiences of our other participants self awareness comes into play, asking 
+questions like “Why did I even get mad in the first place?” or realizing that their own pride is what drove 
+the conflict. Realizing these underlying emotions paves the way for more options and possibilities in 
+relationships, as well as inviting the other party into your life in mutually satisfying ways, says Mark. To 
+reflect this idea, our design ideas from the beginning were focused on self-identifying emotions and 
+exploring why one felt that way. Here is one of our first designs that focused heavily on self awareness:
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
+            src: commAwareness,
+            caption: "Communication and self awareness in our chosen design's storyboard.",
         },
         {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
+            src: processing,
+            caption: "Reflection task flow in Wishbone.",
         },
     ]}
     direction={"row"}
-    width={8}
+    width={12}
     maxHeight={"400px"}
 >
-
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
-
 </ProjectImagesBlock>
 
-### Title for an Insight
+### 3. Time for Processing is Needed
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+Our third key insight to managing conflict healthily was that time helps…a lot. Again, this was a 
+sentiment shared by all our participants in which taking time away from the other party and 
+physically distancing helped as it gave time for people to think and process if needed (instead of 
+rushing into things). The digital mockup of our final design has a section where we incorporated 
+that same sense of space and time in a manner that fit the solution we came up with; this took 
+the form of a “breather” screen between one’s own reflection and reading the other party’s 
+reflection.
 
 ## Iterative Design Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+We constructed our design to support the completion of these two tasks: 1. Articulating Feelings 
+and Receiving Validation 2. Remembering Action Points and Takeaways. With these tasks in 
+mind, our first step was creating a paper prototype which provided the foundation and 
+framework for the functionality of our design. This paper prototype was then deployed through 
+a series of tests that included 2 heuristic evaluations, and 3 usability tests. These tests helped us 
+identify a series of issues that led us to iteratively revising our paper prototype into a final 
+version that we were confident meaningfully and functionally supported our tasks. We finally 
+transitioned the framework of our final paper prototype into a digital mockup where we 
+incorporated design elements to complement the prototype’s functionality.
 
-### Title for an Insight
+### 1. Incorporating Consistency Between Interactive Components
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: beforeConsistency,
+            caption: "Before consistency change to \"next\" button",
+        },
+        {
+            src: afterConsistency,
+            caption: "After consistency change to \"next\" button",
+        },
+    ]}
+    direction={"row"}
+    width={7}
+    maxHeight={"400px"}
+>
+Our initial paper prototype was created with the primary focus being to support the two tasks that we 
+had outlined. In order to navigate around our interface, we created icons for buttons that did not always 
+follow the same structure or aesthetic. Thus, during our first heuristic evaluation our inspector noted 
+confusion regarding the functionality of certain buttons icons. The lack of consistency from screen to 
+screen of the appearance of buttons that should have the same functionality caused unnecessary work 
+for our inspectors to guess what each button will do. This led us to be mindful in all future iterations of 
+our prototypes and design to maintain internal consistency among all of our interactive icons. One key 
+example of this change is documented below with the simplification and standardization of our “next” 
+button that takes the individual to the next screen in the task. 
+</ProjectImagesBlock>
+
+### 2. Ensuring Intuitive Core Functionality
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: beforeFunctionality,
+            caption: "Before functionality change to navigation",
+        },
+        {
+            src: afterFunctionality,
+            caption: "After functionality change to navigation",
+        },
+    ]}
+    direction={"row"}
+    width={7}
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+While providing functionality for completing our tasks was at the forefront of our goals with creating our 
+initial paper prototype, there were many key components missing that disallowed for an individual to 
+smoothly complete our tasks. These issues were by far our most severe and important aspects that we 
+aimed to revise. They were brought to light through our usability tests, where there would be incidents 
+in which our participants found themselves stuck on a screen in our prototype where they were unable 
+to proceed. This indicated to us to ensure each portion of our design has a clear way of advancing and 
+escaping the current screen. For all future iterations of our design, we incorporated this functionality, 
+with a key example of this revision shown to the right.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
-### Title for an Insight
+### 3. Removing Assumptions
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: beforeAssumption,
+            caption: "Before assumption change",
+        },
+        {
+            src: afterAssumption,
+            caption: "After assumption change",
+        },
+    ]}
+    direction={"row"}
+    width={7}
     maxHeight={"400px"}
 >
-
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
-
-</ProjectImageBlock>
-
-### Title for an Insight
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
-
-</ProjectImageBlock>
+When designing our initial paper prototype, one critical mistake that we made was making improper 
+assumptions about the individuals who would be using our design. We primarily designed from the 
+perspective of our own knowledge and capabilities, but failed to recognize the potential variability in 
+that of our participants. During our usability testing, we encountered incidents where our participants 
+were either surprised or confused about certain aspects of our design that we did not originally identify 
+ourselves because we incorrectly assumed that participants would have the same understanding of how 
+our interface works as we do. This led us to make revisions while being mindful to not make assumptions 
+about those who will use the design. An example of this is displayed in which we assume that an 
+individual would know that the “personal reflection” responses are something that will be shared, when 
+in reality there is no indication for someone using the design for the first time, and this was pointed out 
+to us by our participant in the usability test. An assumption that we made that revolved around 
+accessibility and inclusivity was one in which we assumed audio calling capabilities of those using our 
+design, and we also made revisions to have more inclusive wording and options. 
+</ProjectImagesBlock>
 
 ## Resulting Design
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: homeScreen,
         },
         {
-            src: imagePlaceholder300x600,
+            src: inviteScreen,
         },
         {
-            src: imagePlaceholder300x600,
+            src: prHeaderScreen,
         },
         {
-            src: imagePlaceholder300x600,
+            src: prScreen,
         },
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        ""
     }
     width={8}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+Our resulting design from a quarter of iterating tackles these two tasks: 
+(1) articulating feelings and receiving validation (2) remembering action points 
+and takeaways.
+
+To articulate one’s feelings, an individual can create a new wishbone from the homescreen, choose their 
+contact of interest, and begin recording their emotions then their thoughts and feelings.
 
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: otherPrScreen,
         },
         {
-            src: imagePlaceholder300x600,
+            src: callingScreen,
+        },
+        {
+            src: coeditScreen,
+        },
+        {
+            src: writeActionPointScreen,
         },
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        ""
     }
     width={8}
     maxHeight={"400px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+Once both parties have completed the personal reflection process, they can exchange their entries, 
+optionally utilize another form of communication, then begin working on co-editing a collaborative 
+version of the situation at hand. Once the situation has been agreed upon, individuals are prompted to 
+write their own action points on what they can do to help resolve the conflict.
 
+</ProjectImagesBlock>
+
+To go back and remember one’s action points or revisit the previous situations and reflections, an 
+individual can view “past” from the homepage and view a log of their previously created wishbones.
+
+Once selected, the individual can view the situation and both people’s reflections and action points. 
+<ProjectImagesBlock
+    images={[
+        {
+            src: homeScreen,
+        },
+        {
+            src: boneLogScreen,
+        },
+        {
+            src: prevWishbone,
+        },
+        {
+            src: prevActionPointScreen,
+        },
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
+    maxHeight={"400px"}
+>
 </ProjectImagesBlock>

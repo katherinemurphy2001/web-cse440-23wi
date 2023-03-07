@@ -62,7 +62,11 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 import imageLogo from "./assets/post/skia.png";
 import imageIcon from "./assets/post/icon.png";
 import imageFunctionality from "./assets/post/functionality.png";
-import imageDigitalMock from "./assets/post/DigitalMockup.png";
+import imageConsist1a from "./assets/post/consist1a.jpg";
+import imageConsist1b from "./assets/post/consist1b.jpg";
+import imageConsist2a from "./assets/post/consist2a.jpg";
+import imageConsist2b from "./assets/post/consist2b.jpg";
+import imageDigitalMock from "./assets/post/digitalMockup.png";
 import imageTask1Pt1 from "./assets/post/task1pt1.png";
 import imageTask1Pt2 from "./assets/post/task1pt2.png";
 import imageTask2Pt1 from "./assets/post/task2pt1.png";
@@ -234,13 +238,26 @@ paper prototype to a digital mockup (adding color, making some fonts bigger/bold
 
 ### Consistency in Navigation
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageConsist1a,
+            caption: "Before",
+        },
+        {
+            src: imageConsist1b,
+            caption: "After",
+        },
+        {
+            src: imageConsist2a,
+            caption: "Before",
+        },
+        {
+            src: imageConsist2b,
+            caption: "After",
+        },
+    ]}
+    direction={"row"}
     width={6}
     maxHeight={"400px"}
 >
@@ -259,17 +276,30 @@ initially only on the community tab, which made the flow of getting to your prof
 a bit cumbersome. We fixed this by simply adding the profile button to the other
 main-page screens as well.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Privacy Settings
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePlaceholder300x600,
+            caption: "Before",
+        },
+        {
+            src: imagePlaceholder300x600,
+            caption: "After",
+        },
+        {
+            src: imagePlaceholder300x600,
+            caption: "Before",
+        },
+        {
+            src: imagePlaceholder300x600,
+            caption: "After",
+        },
+    ]}
+    direction={"row"}
     width={6}
     maxHeight={"400px"}
 >
@@ -287,18 +317,23 @@ option when sharing a post, because we realized through our usability testing th
 some people may only want to share their workouts with their friends while others
 would want to share their workouts publicly.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Making Locating Content Easier
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePlaceholder300x600,
+            caption: "Before",
+        },
+        {
+            src: imagePlaceholder300x600,
+            caption: "After",
+        },
+    ]}
+    direction={"row"}
+    width={4}
     maxHeight={"400px"}
 >
 
@@ -313,7 +348,7 @@ specific users, captions, or tags. This would allow for more streamlined navigat
 when looking for posts of a specific type or from a specific user, which would make
 the community experience better as a whole.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ## Resulting Design
 
@@ -322,9 +357,10 @@ the community experience better as a whole.
         src: imageDigitalMock,
     }}
     caption={
-        "Digital Mockup Screens"
+        "Digital prototype as hosted on Figma"
     }
-    width={8}
+    direction={"row"}
+    width={6}
     maxHeight={"400px"}
 >
 
@@ -364,11 +400,11 @@ their own records or if they want to post.
             src: imageTask1Pt2,
         },
     ]}
-    direction={"row"}
     caption={
-        "Task 1, Starting a Boxing Session and Receiving Instruction"
+        "Task 1: Starting a session and receiving instruction"
     }
-    width={8}
+    direction={"row"}
+    width={12}
     maxHeight={"400px"}
 >
 
@@ -383,11 +419,11 @@ their own records or if they want to post.
             src: imageTask2Pt2,
         },
     ]}
-    direction={"row"}
     caption={
-        "Task 2, Review a Friend’s Post and Share Your Own Boxing Session"
+        "Task 2: Reviewing a friend’s session and posting your own"
     }
-    width={8}
+    direction={"row"}
+    width={12}
     maxHeight={"400px"}
 >
 

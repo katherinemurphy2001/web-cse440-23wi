@@ -70,7 +70,7 @@ import imageDigitalProfile from "./assets/post/digital-profile.png";
         src: imageRestaurantInfoMrWest,
         alt: "A screen on our app showing information about the restaurant Mr. West. " +
              "There is a listing of the menu items. The ones you can eat are closer to the top, " +
-             "like avocado toast in this example, which is marked with a green checkmark."
+             "like avocado toast in this example, marked with a green checkmark."
     }}
     caption={
         "NomNom shows you user-contributed data, but it also has features that " + 
@@ -83,11 +83,11 @@ import imageDigitalProfile from "./assets/post/digital-profile.png";
 NomNom is an app that helps you find restaurants for yourself or a group, while
 taking into account your dietary restrictions and preferences.
 
-Dietary restrictions are common in the United States.
+Dietary restrictions are common in the US.
 More than half of Americans report some form of dietary restrictions, whether due to
 allergies, religious or cultural practices, or personal preference.
 But people can be hesitant to ask for accommodations
-or assert what they actually want to eat.
+or assert what they actually want to eat in a group setting.
 We are dedicated to the
 proposition that your dietary needs do not have to either be deadly or written
 off as an afterthought.
@@ -117,11 +117,12 @@ The semi-structured format allowed our participants to tell us what they feel is
 allowed us to follow-up with questions about their decision-making process. Afterwards, we 
 performed coding for common experiences, and those codes became our research insights.
 
-We interviewed four people.
+We interviewed four people who we know are food lovers, but they have different dietary restrictions
+and follow those restrictions with varying strictness.
 Our participants vary in stages of life and restaurant dining frequencies.
-They also all have different kinds of dietary restrictions—diagnosed allergies, religious
+They also cover all of the types of dietary restrictions we know of—diagnosed allergies, religious
 practices, adopted diets, and no dietary restrictions at all—and
-we intentionally made sure our participant pool is diverse in this respect.
+and we wanted to be intentional about diversifying our participant pool in this respect.
 
 ### Eating with a group is the most pressing, unresolved problem
 
@@ -138,15 +139,31 @@ we intentionally made sure our participant pool is diverse in this respect.
     width={4}
     maxHeight={"300px"}
 >
+> Usually, we are brainstorming places as a group that might fit my food needs. Then 
+> I have the final say as to whether or not they will work out.
+>
+> —<cite>Participant 5, Assignment 2d</cite>
+
+> We wouldn't go to somewhere that's great, like a Korean place... it makes it 
+> less likely for us to go there [because of what people perceive of the entire cuisine].
+>
+> —<cite>Participant 4, Assignment 2d</cite>
+
 Our research shows that dining with a group is often the most challenging and unresolved
 issue for our participants. 
 
-This is a complex process—there are the logistics in data sharing, but it is also a process that 
-requires emotional safety.
+Turns out, this can actually be a complex process. There are the logistics in sharing everybody's dietary
+restrictions and finding the overlap, but this is also a process that 
+requires a lot emotional safety.
 And sometimes, people suffer from indecision and just hate to be the person to decide for a group.
 As the number of group members increases, this frustration also grows exponentially.
 
 ### Restaurant discovery should be a first-class task
+
+> I use DoorDash exclusively, because it has my top restaurants [...] and
+> I like it creates an algorithm for me.
+>
+> —<cite>Participant 1, Assignment 2c</cite>
 
 We found that people are in fact eager to explore and share new restaurants,
 even if they do not consistently have the opportunity to do so.
@@ -159,6 +176,11 @@ feels safe and not exhausting.
 </ProjectImagesBlock>
 
 ### The ability to self-track-and-report matters, because third-party data alone can not be trusted
+
+> I prefer not to eat meat at all, unless it comes from a restaurant that I know cooks
+> their meat completely through.
+>
+> —<cite>Participant 1, Assignment 2c</cite>
 
 We found that being able to self-track
 and report dietary restrictions and restaurant experiences is an important need.
@@ -200,8 +222,8 @@ to design for, we narrowed our scenarios down to:
 Our design process began with creating an initial paper prototype. For that, we included the necessary
 features for our tasks. We then conducted heuristic evaluations and usability testing on the paper
 prototype:
-- First, we invited other groups in CSE 440 to give us
-feedback on the design based on Jakob Nielsen's usability heuristics.
+- First, we invited two other groups in CSE 440 to give us
+feedback on the design based on [Jakob Nielsen's usability heuristics](http://web.archive.org/web/20201130102822/https://www.nngroup.com/articles/ten-usability-heuristics/).
 - Then, we invited four additional participants, who are not in this class, to participate
 in a usability study.
 
@@ -246,7 +268,7 @@ this particular case, we added a way to leave a group, among other similar featu
 <ProjectImageBlock
     image={{
         src: imageAddedHistoryText,
-        alt: "A paper prototype screen with text, Congrats, you're going to: 'Food X'. The restaurant title " +
+        alt: "A paper prototype screen with text, Congrats, you're going to: Restaurant Name. The restaurant title " +
              "is layered on top of a picture of the food. Notably, there is a small help message " +
              "at the very bottom that tells you this restaurant has been added to your history."
     }}
